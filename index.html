@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="nav-logo">
+                <li style="list-style: none; font-size: 20px; color: bisque;"><a
+                        style="font-size: 20px; color: bisque; text-decoration: none;" href="./basket.html">Basket
+                        Page</a></li>
+            </div>
+            <ul class="links">
+                <li>Basket count: <span class="count">0</span></li>
+                <li>Total price: <span class="total">0<span class="fw-bold">$</span></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card" data-id="1">
+                            <div class="card-body">
+                                <img class="card-img-top"
+                                    src="https://asset2.ee.co.uk/medias/iphone-12-5g-64gb-purple-desktop-detail-1-Format-976?context=bWFzdGVyfHJvb3R8NDgwOTE4fGltYWdlL3BuZ3xzeXMtbWFzdGVyL3Jvb3QvaDBlL2hhMS85NjQ2MDQ1MDAzODA2L2lwaG9uZS0xMi01Zy02NGdiLXB1cnBsZS1kZXNrdG9wLWRldGFpbC0xX0Zvcm1hdC05NzZ8ZWU4OGMxZTUwYzFkMTE5YmY2MDBjMGE4ZjlhNmFlMTFhNzkxM2Y2YzgyMzJmNzA1ZDExY2RiNjE1MzZjYjU0NA"
+                                    alt="Card image cap">
+
+                                <h5 class="card-title">Iphone</h5>
+                                <p class="card-text">Product iphone </p>
+                                <p class="card-text"><span class="price">2000</span> <span class="fw-bold">$</span></p>
+                                <a role="button" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" data-id="2">
+                            <div class="card-body">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/I/91W42b8YW+L._SX679_.jpg"
+                                    alt="Card image cap">
+
+                                <h5 class="card-title">Samsung</h5>
+                                <p class="card-text">Product Samsung </p>
+                                <p class="card-text"><span class="price">1500</span> <span class="fw-bold">$</span> </p>
+                                <a role="button" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" data-id="3">
+                            <div class="card-body">
+                                <img class="card-img-top"
+                                    src="https://img01.huaweifile.com/eu/uk/huawei/pms/uomcdn/GBHW/pms/202210/gbom/6941487275373/428_428_D2BDDC5B0A52A5F98600A04FABB6762Fmp.png"
+                                    alt="Card image cap">
+
+                                <h5 class="card-title">Huawei</h5>
+                                <p class="card-text">Product Huawei </p>
+                                <p class="card-text"><span class="price">800</span> <span class="fw-bold">$</span></p>
+                                <a role="button" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" data-id="4">
+                            <div class="card-body">
+                                <img class="card-img-top"
+                                    src="https://myshops.ae/image/cache/catalog/tovar/7264981/note11-grey-0-540x550.jpg"
+                                    alt="Card image cap">
+
+                                <h5 class="card-title">Xiaomi</h5>
+                                <p class="card-text">Product Xiaomi </p>
+                                <p class="card-text"><span class="price">600</span> <span class="fw-bold">$</span> </p>
+                                <a role="button" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="container">
+        <div class="to-do-app">
+            <div class="container pt-5">
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider"></tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container"><button onclick="del()" class="btn btn-danger mt-5">Clear all <i
+                class="fa-solid fa-ban"></i></button></div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
