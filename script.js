@@ -52,24 +52,26 @@ addToCardButtons.forEach((add) => {
 
 const box = document.querySelector('.to-do-app');
 
+let product=JSON.parse(localStorage.getItem("product"))
+product.forEach(elem => {
+    box.appendChild(addTask(elem))
+});
 
-basket.forEach(addTask);
-
-function addTask(text) {
+function addTask({name,desc,price}) {
 
     let row = document.createElement("tr")
 
     let nameTd = document.createElement("td")
 
-    nameTd.innerText = text.name;
+    nameTd.innerText = name;
     console.log(nameTd);
     let priceTd = document.createElement("td")
 
-    priceTd.innerText = text.price;
+    priceTd.innerText = price;
 
     let descTd = document.createElement("td")
 
-    descTd.innerText = text.desc;
+    descTd.innerText = desc;
 
     row.append(nameTd, descTd, priceTd)
 
@@ -78,11 +80,4 @@ function addTask(text) {
 
     return row;
 
-}
-
-
-function del() {
-    localStorage.clear();
-    box.innerHTML = '';
-    basket = [];
 }
